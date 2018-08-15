@@ -1,10 +1,13 @@
 {
   "scripts": {
     "init-wdio": "wdio config",
-    "start-server": "appium"
+    "start-server": "appium",
+    "test": "wdio wdio.conf.js",
+    "check-dependency": "appium-doctor"
   },
   "dependencies": {
     "appium": "^1.8.1",
+    "appium-doctor": "^1.4.3",
     "webdriverio": "^4.13.1"
   },
   "devDependencies": {
