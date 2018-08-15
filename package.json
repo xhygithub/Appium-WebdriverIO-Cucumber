@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "init-wdio": "wdio config"
+  },
+  "dependencies": {
+    "webdriverio": "^4.13.1"
+  },
+  "devDependencies": {
+    "wdio-cucumber-framework": "^2.2.3"
+  }
+}
