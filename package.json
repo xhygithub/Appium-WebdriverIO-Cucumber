@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "init-wdio": "wdio config"
+    "init-wdio": "wdio config",
+    "start-server": "appium"
   },
   "dependencies": {
+    "appium": "^1.8.1",
     "webdriverio": "^4.13.1"
   },
   "devDependencies": {
