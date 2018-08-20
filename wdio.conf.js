@@ -44,7 +44,13 @@ exports.config = {
         // 5 instances get started at a time.
         maxInstances: 5,
         //
-        browserName: 'firefox'
+        // browserName: 'firefox',
+        platformName: 'iOS',
+        platformVersion: '11.3',
+        deviceName: 'iPhone 5s',
+        automationName: "XCUITest",
+        browserName: 'Safari',
+        showXcodeLog: true
     }],
     //
     // ===================
@@ -126,7 +132,7 @@ exports.config = {
     // reporters: ['dot'],//
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
-        require: ['./features/step-definitions'],        // <string[]> (file/dir) require files before executing features
+        require: ['./features/step-definitions/*.js'],        // <string[]> (file/dir) require files before executing features
         backtrace: false,   // <boolean> show full backtrace for errors
         compiler: [],       // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
         dryRun: false,      // <boolean> invoke formatters without executing steps
@@ -141,6 +147,8 @@ exports.config = {
         timeout: 20000,     // <number> timeout for step definitions
         ignoreUndefinedDefinitions: false, // <boolean> Enable this config to treat undefined definitions as warnings.
     },
+    // host: '0.0.0.0',
+    port: 4723,
     
     //
     // =====
